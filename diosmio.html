@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>
+    <title>i have lost count of how many times my dad has called me to tell me he saw jesus in his tortilla</title>
+    <style>
+body{
+background-image: url(images/candles.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-blend-mode: difference;
+background-color: blueviolet;
+cursor: crosshair;
+}
+
+a:link{
+text-decoration: none;
+}
+
+a:hover{
+cursor: help;
+}
+
+#perceptions{
+position: absolute;
+top: 0px;
+color: yellow;
+font-family: fantasy;
+font-size: 22px;
+line-height: 70px;
+text-align: justify;
+opacity: .2;
+z-index: -1;
+}
+
+#sabor{
+top: 20px;
+text-align: right;
+font-size: 140px;
+font-family: Arial, Helvetica, sans-serif;
+font-style: bold;
+line-height: 100px;
+z-index: 3;
+}
+
+#taste{
+color: yellow;
+font-style: italic;
+letter-spacing: 30px;
+font-family: cursive;
+}
+
+#taste:hover{
+color: red;
+font-variant-caps: titling-caps;
+filter: drop-shadow(5px 5px 2px yellow);
+}
+
+.photos{
+position: absolute;
+border-radius: 10%;
+opacity: .5;
+z-index: 1;
+}
+
+.photos:hover{
+opacity: 1;
+filter: drop-shadow(20px 20px 10px orange);
+border-style: dashed;
+border-width: 11px;
+border-color: red;
+}
+
+#lil_baby{
+position: fixed;
+height: 200px;
+bottom: 0px;
+left: 0px;
+opacity: .8;
+   
+}
+
+#lil_baby:hover{
+opacity: 1;
+filter: drop-shadow(20px 20px 10px rgb(255, 94, 0));
+cursor: help;
+}
+
+#maria{
+top: 30px;
+left: 20px;
+height: 500px;
+}
+
+#jesus1{
+width: 300px;
+left: 650px;
+top: 220px;
+}
+
+#bowl{
+width: 300px;
+left: 400px;
+top: 650px;
+}
+
+#mom{
+position: fixed;
+right: 30px;
+bottom: 10px;
+height: 30vh;
+border-radius: 5%;
+}
+
+#mom2{
+position: absolute;
+height: 30vh;
+border-radius: 10%;
+bottom: 10px;
+right: 250px;
+filter: drop-shadow(20px 20px 10px orange);
+border-style: dashed;
+border-width: 11px;
+border-color: red;
+}
+
+    </style>
+</head>
+<body>
+<div id="sabor">MUCHO
+<br>SABOR
+<br><br><br>
+enjoy the
+<br><a href="https://www.youtube.com/watch?v=yB_-zD58HJA"><span id="taste">devine taste</a></span></div>
+
+<img class="photos" id="maria" src="images/maria_rubio.jpg">
+<img id="mom2" src="images/mom_tortilla.JPG">
+
+<img class="photos" id="jesus1" src="https://relevantmagazine.com/wp-content/uploads/2019/04/Screen-Shot-2019-04-30-at-9.29.52-AM.png">
+<img class="photos" id="bowl" src="images/tortilla_bowl.JPG">
+<video loop controls id="mom" src="videos/mom.mp4" type="video/mp4"></video>
+
+<!-- background text  -->
+<div id="perceptions">
+People have been found to perceive images with spiritual or religious themes or import, sometimes called iconoplasms or simulacra, in the shapes of natural phenomena. The images perceived, whether iconic or aniconic, may be the faces of religious notables or the manifestation of spiritual symbols in the natural, organic media or phenomena of the natural world. The occurrence or event of perception may be transient or fleeting or may be more enduring and monumental. The phenomenon appears to approach a cultural universal and may often accompany nature worship, animism, and fetishism, along with more formal or organized belief systems.
+<br>
+Within Christian traditions, many instances reported involve images of Jesus or other Christian figures seen in food; in the Muslim world, structures in food and other natural objects may be perceived as religious text in Arabic script, particularly the word Allah or verses from the Qur'an. Many religious believers view them as real manifestations of miraculous origin; a skeptical view is that such perceptions are examples of pareidolia.
+<br>
+The original phenomena of this type were acheropites: images of major Christian icons such as Jesus and the Virgin Mary that were believed to have been created by supernatural means. The word acheropite comes from the Greek ἀχειροποίητος, meaning "not created by human hands", and the term was first applied to the Turin Shroud and the Veil of Veronica. Later, the term came to apply more generally to simulacra of a religious or spiritual nature occurring in natural phenomena, particularly those seen by believers as being of miraculous origin.
+
+</div>
+
+<!-- home button  -->
+<a href="index.html"><img id="lil_baby" src="images/angel1.png"></a>
+
+<script>
+    window.onload = function () {
+    document.getElementById("mom2").style.display = "none";
+    }
+
+    document.getElementById("maria").onmouseover = function () {
+    document.getElementById("mom2").style.display = "block";
+    };
+
+    document.getElementById("maria").onmouseout = function () {
+    document.getElementById("mom2").style.display = "none";
+    };
+</script>
+</body>
+
+</html>
+
+<!-- image sources that i borrowed
+    
+https://www.alamy.com/mexican-votive-candles-in-store-phoenix-arizona-usa-image222598315.html
+https://www.alibaba.com/product-detail/Ceramic-Cherub-Figurine-White-Sleeping-baby_60525575147.html
+https://www.abqjournal.com/2552700/a-moment-of-hope-ex-a-new-mexico-family-and-the-tortilla-that-captur.html
+
+background text
+https://en.wikipedia.org/wiki/Perceptions_of_religious_imagery_in_natural_phenomena
+
+-->

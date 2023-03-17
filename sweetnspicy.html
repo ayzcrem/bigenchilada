@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<head>
+    <title>should i try something new or should i just get a mangonada?</title>
+    <style>
+body{
+background-color: rgb(26, 255, 0);
+background-image: url(images/snacks/store1.JPG);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-blend-mode: difference;
+cursor: crosshair;
+}
+
+.top{
+display: flex;
+justify-content: center;
+z-index: -2;
+}
+
+#menus{
+width: 450px;
+filter: saturate(150%);
+border-bottom-style: dotted;
+border-bottom-width: 80px;
+border-bottom-color: #ff1f9a;
+padding: 10px;
+}
+
+/* fixed snack images */
+.snacks_fixed{
+position: fixed;
+filter: saturate(140%);
+bottom: 0px;
+}
+
+.snacks_fixed:hover{
+cursor: help;
+}
+
+#mangonada{
+height: 400px;
+right: 0px;
+}
+
+#chamoy{
+height: 300px;
+right: 0px;
+}
+
+#taki{
+left: 0px;
+height: 300px;
+}
+
+#raspa{
+height: 250px;
+left: 0px;
+}
+
+#raspa1{
+height: 250px;
+left: 0px;
+}
+
+.yum{
+position: absolute;
+z-index: -1;
+filter: saturate(150%) drop-shadow(10px 10px 5px blue);
+border-radius: 5%;
+}
+
+#viv{
+height: 300px;
+top: 450px;
+left: 400px;
+}
+
+#dad1{
+width: 400px;
+top: 600px;
+right: 350px;
+}
+
+#chips{
+height: 200px;
+top: 450px;
+right: 100px;
+rotate: -20deg;
+}
+
+#candy1{
+height: 300px;
+top: 1100px;
+right: 400px;
+}
+
+#candy2{
+height: 300px;
+top: 850px;
+left: 300px;
+}
+
+#fruit{
+height: 200px;
+top: 460px;
+left: 100px;
+}
+
+#pica{
+    width: 500px;
+top: 1280px;
+left: 300px;
+}
+
+#concha{
+height: 300px;
+top: 1600px;
+right: 300px;
+}
+
+#melon{
+position: fixed;
+width: 100px;
+bottom: 10px;
+left: 180px;
+rotate: -10deg;
+opacity: .8;
+}
+
+#melon:hover{
+    opacity: 1;
+    filter: drop-shadow(10px 10px 5px yellow);
+    cursor: help;
+}
+    </style>
+</head>
+<body>
+<!-- photos of menus at top-->
+<div class="top">
+<img id="menus" src="images/snacks/tropical.JPG">
+<img id="menus" src="images/snacks/mom_snacks.JPG">
+<img id="menus" src="images/snacks/snack_menu2.jpg">
+</div>
+
+<!-- bottom right corner images -->
+<img class="snacks_fixed" id="mangonada" src="images/snacks/mangonada1.png">
+<img class="snacks_fixed" id="chamoy" src="images/snacks/chamoy1.png">
+
+<!-- bottom left corner images -->
+<img class="snacks_fixed" id="taki" src="images/snacks/taki.png">
+<img class="snacks_fixed" id="raspa" src="images/snacks/raspa.png">
+<img class="snacks_fixed" id="raspa1" src="images/snacks/raspa1.png">
+
+<!-- body images -->
+<img class="yum" id="viv" src="images/snacks/viv.JPG">
+<img class="yum" id="dad1" src="images/snacks/dad1.JPG">
+<img class="yum" id="chips" src="images/snacks/chips2.png">
+<img class="yum" id="candy1" src="images/snacks/candy.JPG">
+<img class="yum" id="candy2" src="images/snacks/candy2.JPG">
+<img class="yum" id="fruit" src="images/snacks/fruitcup.png">
+<img class="yum" id="concha" src="images/snacks/concha.png">
+<img class="yum" id="pica" src="images/snacks/picapica.jpg">
+
+<!-- home button -->
+<a href="index.html"><img id="melon" src="images/watermelon.png"></a>
+
+  <script>
+
+    window.onload = function () {
+            document.getElementById("chamoy").style.display = "none";
+            document.getElementById("raspa").style.display = "none";
+            document.getElementById("raspa1").style.display = "none";
+}
+
+// bottom right images
+    document.getElementById("mangonada").onclick = function () {
+           document.getElementById("chamoy").style.display = "block";
+           document.getElementById("mangonada").style.display = "none";
+       };
+
+    document.getElementById("chamoy").onclick = function () {
+           document.getElementById("mangonada").style.display = "block";
+           document.getElementById("chamoy").style.display = "none";
+       };
+
+ //  bottom left images
+    document.getElementById("taki").onclick = function () {
+           document.getElementById("raspa").style.display = "block";
+           document.getElementById("taki").style.display = "none";
+       };
+
+    document.getElementById("raspa").onclick = function () {
+           document.getElementById("raspa1").style.display = "block";
+           document.getElementById("taki").style.display = "none";
+           document.getElementById("raspa").style.display = "none";
+       };
+
+    document.getElementById("raspa1").onclick = function () {
+           document.getElementById("taki").style.display = "block";
+           document.getElementById("raspa").style.display = "none";
+           document.getElementById("raspa1").style.display = "none";
+       };
+
+  </script>  
+</body>
+
+</html>
+
+<!-- image sources that i borrowed
+
+https://www.sustainingthepowers.com/chili-lime-watermelon-pops/ 
+
+-->
